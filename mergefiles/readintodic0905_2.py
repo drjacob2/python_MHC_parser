@@ -55,6 +55,7 @@ def count_switch(dict):
     # add more features to the 
     for k, v in dict.items():
         count = v.count('|')
+        print(count)
     return count
 
 def nuc_file_split(dict):
@@ -167,16 +168,19 @@ def main():
    # for j in range(len(first)):
     for k, v in alleles_nuc.items():  # for key value in alleles.items()
         j=0
-        newstr = ""
+        newstr = a[0] + "|"
         for i in range(len(v)):  # len(value)
             c = v[i]  # get the base value at position i
             if c == "|":  # check if it is |
                 # if it is - then add the first allele has in the same position to new string
-                    newstr += a[j]
                     j+=1
+                    newstr += "|" + a[j] + "|"
+                    print(j)
             else:
                 newstr += c  # else add value to new string
+        newstr += "|" + a[-1] 
         alleles_nuc[k] = newstr  # reset dictionary here
+    print(alleles_nuc)
 
     for key in alleles_nuc.keys():
         if key in alleles_gen:
@@ -186,12 +190,12 @@ def main():
             print("NUC only:", key)
             d[key] = alleles_nuc[key]
     #print(d)
-    '''
+    
     for k, v in d.items():
         print(k, v)
     for v in d.values():
         print(len(v))
-    '''
+    count_switch(d)
 
 if __name__ == "__main__":
     main()
