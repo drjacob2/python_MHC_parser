@@ -24,7 +24,9 @@ This project uses the HLA files located [here](https://github.com/ANHIG/IMGTHLA)
 Jupyter notebooks are versions of importing gen file for cleaning and counting unique columns. 
 
 #### Running mergefiles.py
-any where that you see a comment `###### ~ UPDATE`, please update that line prior to running. As seen in the following lines: 
+1. Identify what HLA-gene you would like to work with form [here](https://github.com/ANHIG/IMGTHLA). Grab your txt file from alginement folder -> grab the nuc and gen file for the gene you wish to look at. 
+* example: `A_gen.txt` and `A_nuc.txt`
+2. any where that you see a comment `###### ~ UPDATE`, please update that line prior to running. As seen in the following lines: 
 ```python
             ###### ~ UPDATE 
             if("C*" in line):
@@ -65,4 +67,21 @@ any where that you see a comment `###### ~ UPDATE`, please update that line prio
     "/Users/drjacobs/Documents/python_MHC_parser/mergefiles/C_gen.txt" 
     nameList_gen, alleles_gen = parsetodic(gen_text)
 ```
+
+Update these sections with material relevent to the allele and file you are working with:
+1. `if("C*" in line):` update `C*` with HLA gene name 
+    * A
+    * B
+    * C
+    * DQA1
+    * DQA2
+    * DQB1
+    * DQB2
+    * DRA
+    * DRB
+1. `first = alleles["C*01:02:01:01"]` change `C*01:02:01:01` to the first line in code
+1. `nuc_text = input("Enter a nuc file path or hit enter to accept default:") or "/Users/drjacobs/Documents/python_MHC_parser/mergefiles/C_nuc.txt"` update with the path to your nuc file. 
+1.  `gen_text = input("Enter a gen file path or hit enter to accept default:") or "/Users/drjacobs/Documents/python_MHC_parser/mergefiles/C_gen.txt"` update with the path to your gen file. 
+
+You hsould not be set to run! Just make sure you have python3. 
 
