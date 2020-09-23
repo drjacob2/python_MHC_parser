@@ -1,6 +1,9 @@
 # python_MHC_parser
 this is a parser to read in MHC files from ANHIG / IMGTHLA and parse it to certain format requirements. 
 
+## Background 
+This project uses the HLA files located [here](https://github.com/ANHIG/IMGTHLA). This project is aimed at taking the relevent  
+
 ## file information 
 -merge_file_B.txt - merged version of B_gen and B_nuc ran 09/06
 
@@ -9,5 +12,9 @@ this is a parser to read in MHC files from ANHIG / IMGTHLA and parse it to certa
 -merged_file_DMA.txt - merged version of DMA_gen and DMA_nuc ran 09/06
 
 -merged_files_A.txt - merged version of A_gen and A_nuc ran 09/06
+
+-mergefiles.py - final version as of 09/06 to read in nuc and gen files and merge
+
+-HLAtest.py - takes the alginments/gen file from the IMGTHLA database and uses pandas to count the unique values 
 
 Jupyter notebooks are versions of importing gen file for cleaning and counting unique columns. 
