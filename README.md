@@ -78,10 +78,10 @@ Update these sections with material relevent to the allele and file you are work
     * DQB1
     * DQB2
     * DRA
-    * DRB
+    * DRB 
 1. `first = alleles["C*01:02:01:01"]` change `C*01:02:01:01` to the first line in code
 1. `nuc_text = input("Enter a nuc file path or hit enter to accept default:") or "/Users/drjacobs/Documents/python_MHC_parser/mergefiles/C_nuc.txt"` update with the path to your nuc file. 
 1.  `gen_text = input("Enter a gen file path or hit enter to accept default:") or "/Users/drjacobs/Documents/python_MHC_parser/mergefiles/C_gen.txt"` update with the path to your gen file. 
 
-You hsould not be set to run! Just make sure you have python3. :smiley:
+You should not be set to run! Just make sure you have python3. :smiley:
 
