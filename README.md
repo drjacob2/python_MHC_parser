@@ -2,7 +2,7 @@
 this is a parser to read in MHC files from ANHIG / IMGTHLA and parse it to certain format requirements. 
 
 ## Background 
-This project uses the HLA files located [here](https://github.com/ANHIG/IMGTHLA). This project is aimed at taking the relevent  
+This project uses the HLA files located [here](https://github.com/ANHIG/IMGTHLA). This project is aimed at taking the alignment files, combining the subsets of the gen and nuc files for a given allele, provding a clean output file of the combined data, and providing a count.   
 
 ## file information 
 -merge_file_B.txt - merged version of B_gen and B_nuc ran 09/06
