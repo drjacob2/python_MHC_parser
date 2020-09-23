@@ -4,6 +4,8 @@ this is a parser to read in MHC files from ANHIG / IMGTHLA and parse it to certa
 ## Background 
 This project uses the HLA files located [here](https://github.com/ANHIG/IMGTHLA). This project is aimed at taking the alignment files, combining the subsets of the gen and nuc files for a given allele, provding a clean output file of the combined data, and providing a count.   
 
+
+
 ## file information 
 -merge_file_B.txt - merged version of B_gen and B_nuc ran 09/06
 
@@ -16,5 +18,7 @@ This project uses the HLA files located [here](https://github.com/ANHIG/IMGTHLA)
 -mergefiles.py - final version as of 09/06 to read in nuc and gen files and merge
 
 -HLAtest.py - takes the alginments/gen file from the IMGTHLA database and uses pandas to count the unique values 
+
+-DataQ&A.pptx - an attempted walk through of the gen and nuc data sets and how they need to be combined 
 
 Jupyter notebooks are versions of importing gen file for cleaning and counting unique columns. 
